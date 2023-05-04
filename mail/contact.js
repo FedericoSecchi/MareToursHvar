@@ -1,5 +1,4 @@
 $(function () {
-
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
@@ -21,7 +20,8 @@ $(function () {
                     name: name,
                     email: email,
                     subject: subject,
-                    message: message
+                    message: message,
+                    recipient: "federicosecchi@icloud.com"
                 },
                 cache: false,
                 success: function () {
